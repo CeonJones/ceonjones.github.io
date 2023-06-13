@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/styles.css" type="text/css">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!--Favicon-->
+  <link rel="icon" href="/Users/ceonjones/portfolio-site/img/favicon.ico" type="image/x-icon">
+
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+
+	<!-- Primary Meta Tags -->
+  <title>C'eon Jones</title>
+  <meta name="title" content="C'eon Jones">
+  <meta name="description" content="C'eon Jones">
+  <meta name="author" content="C'eon Jones">
+</head>
+<body>
+  <div id="stars-container"></div>
+	<header class="grid-half">
+    <div id="logo" class="fade-in-animation" data-animation-duration="2s" data-animation-delay="0">
+			<h1>C'eon Jones</h1>
+      <svg class="logo-svg" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"></svg>
+      <!--SVG path-->
+      <svg class="logo-svg" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="/Users/ceonjones/portfolio-site/img/BEIGE-SCAN-TRIAL.svg"></use>
+      </svg>
+    </div> 
+    <div id="time-mode" class="fade-in-animation" data-animation-duration="1s" data-animation-delay="0.5s">
+			<span id="icon" class="icon" onclick="toggleTheme()" onmouseenter="disableTimeCheck()"></span>
+			<script src="js/time.js"></script>			
+		</div>
+  </header>
+	<main id="content" class="fade-in-animation" data-animation-duration="1.5s" data-animation-delay="0.8s">
+		<section class="intro">
+			<h2>Hello there</h2>
+			<p>
+				My name is C'eon [C • e • on] and I'm a student, software developer, designer, audio engineer, producer, artist, entrepreneur and exceptional ping-pong player living in <span class="strike">freezing</span> sunny Kansas City.
+			</p>
+      <p>
+        I'm currently a student at the <a href="https://www.umkc.edu/">University of Missouri - Kansas City</a> studying Computer Science with a minor in French. I'm also a freelance software developer and web developer.
+			</p>
+      <p>
+        I'm passionate about creating things that make people's lives easier and more enjoyable. I'm also passionate about music, art, and design. I'm always looking for new opportunities to learn and grow as a developer and as a person.
+      </p>
+    </section>
+		<section class="intro">
+			<h2>Stay in touch</h2>
+			<div class="grid-left">
+				<div>
+					<span class="material-symbols-outlined">social_distance</span>
+				</div>
+				<div>
+					Not on social media, because life is more enjoyable that way, so..
+				</div>
+			</div>
+			<div class="grid-left">
+				<div>
+					<span class="material-symbols-outlined">mail</span>
+				</div>
+				<div>
+					<a href="mailto:ceon.j097@gmail.com">email me</a> if you want to chat about anything big or small!
+				</div>
+			</div>
+     <!---- <div class="grid-left">
+				<div>
+					<span class="material-symbols-outlined">palette</span>
+				</div>
+				<div>
+					<div class="portfolio-container">
+					  <label id="portfolio-label" for="email-input">Check out my creative portfolio</label>
+					  </div>
+					</div>
+				</div>
+			</div>	-->
+		</section>
+		<section class="last">
+			<h2>Education</h2>
+      <div class="role">
+				<div class="grid-right">
+					<div>
+						<h3>University of Missouri - Kansas City</h3>
+						<p class="role-title">Bachelor of Science - Computer Science</p>
+						<p class="date metatext">August 2020 - Expected 2024</p>
+					</div>
+					<div class="right">
+						<a href="https://www.umkc.edu/" target="_blank"><span class="material-symbols-outlined">link</span></a>
+					</div>
+				</div>
+						<p class="company-intro">Currently pursuing a degree in Computer Science with a minor in French. Main focuses include signal processing, musical software, and machine learning.</p>
+				</div>
+				</section>
+    
+		<section class="last">
+			<h2>Experience & Projects</h2>
+      <div class="role">
+				<div class="grid-right">
+					<div>
+						<h3>Saber Mobile</h3>
+						<p class="role-title">Lead Developer & Designer</p>
+						<p class="date metatext">2023</p>
+					</div>
+					<div class="right">
+						<a href="https://github.com/CeonJones/sabermobile" target="_blank"><span class="material-symbols-outlined">link</span></a>
+					</div>
+				</div>
+				<p class="company-intro">A working cross-platform mobile application for <a href="https://sabermag.squarespace.com/">Saber Magazine</a>, a local magazine showcasing artisty in Kansas City.</p>
+				<ul class="company-intro">
+					<li>Designed functional UI in Figma</li>
+					<li>Translated design into a cross-platform mobile app using Flutter dev kit </li>
+					<li>Published working version to Github, for open source contributions</li>	
+				</ul>
+			</div>
+			<div class="role">
+				<div class="grid-right">
+					<div>
+						<h3>Delay Man</h3>
+						<p class="role-title">Audio Delay Signal Processing</p>
+						<p class="date metatext">2023</p>
+					</div>
+					<div class="right">
+						<a href="https://github.com/CeonJones/audio-delay-plugin" target="_blank"><span class="material-symbols-outlined">link</span></a>
+					</div>
+				</div>
+				<p class="company-intro">A audio dealy plugin created using JUCE framework in C++ Highly compatible with various digital audio workstations.</p>
+				<ul class="company-intro">
+					<li>Created real-time audio processing algorithm for customizable daley fx</li>
+					<li>Implemented 3 knob control parameters for sound manipulation</li>
+					<li>Designed UI using GUI libraries</li>
+					<li>Documented plugin features and created usage guidelines for version control tools like Git and Github</li>
+				</ul>
+			</div>
+			<div class="role">
+				<div class="grid-right">
+					<div>
+						<h3>KC Cash 4 Cars</h3>
+						<p class="role-title">Digital Marketing Manager</p>
+						<p class="date metatext">2023 - Present</p>
+					</div>
+					<div class="right">
+						<a href="https://www.kccash4carsusa.com/" target="_blank"><span class="material-symbols-outlined">link</span></a>
+					</div>
+				</div>
+				<p class="company-intro">Family-owned and operated business specializing in buying junk cars, providing junking towing services.</p>
+				<ul class="company-intro">
+					<li>50% increase in web traffic within two months by implementing targeted SEO strategies, resulting in 3,500 monthly organic visits.</li>
+					<li>Managed $800 monthly digital ad budget, acheiving 200% (ROAS)</li>
+					<li>Conduct A/B testing on ad copy and landing page leading to 35% improvement in conversion rates</li>
+					<li>Optimize keyword targeting and bidding strategies, resulting in a 50% decrease in cost-per-click</li>
+				</ul>
+			</div>
+			<div class="role">
+				<div class="grid-right">
+					<div>
+						<h3>3600 Plus Startup</h3>
+						<p class="role-title">UI/UX Concept Designer</p>
+						<p class="date metatext">2022 - Present</p>
+					</div>
+					<div class="right">
+						<a href="https://www.linkedin.com/company/3600plus/" target="_blank"><span class="material-symbols-outlined">link</span></a>
+					</div>
+				</div>
+				<p class="company-intro">Creative business incubator, event space, co-op workspace, and multimedia facility/agency.</p>
+				<ul class="company-intro">
+					<li>Conceptualized mobile application idea for mulit-faceted crative business incubator, co-op workspace and multimedia facility</li>
+					<li>Developed interactive prototype using <a href="https://www.figma.com/file/xFctBbmOf4SVTiRWY8m4E6/CREATIVE-HUB-PROTOTYPE?type=design&node-id=0%3A1&t=b07VkeQrC882Sn9e-1">Figma</a>, to showcase app functionality to potential stakeholders.</li>
+					<li>Collaborated with developers to implement design solutions</li>
+				</ul>
+			</div>
+    </section>
+		<section class="last">
+				<div>
+				<h3>Awards</h3>
+					<p class="role-title">Henry W. Bloch Scholars Program Scholarship</p>
+					<p class="date metatext">2022</p>
+				</div>
+				<div class="right">
+					<a href="https://finaid.umkc.edu/financial-aid/scholarships/competitive/henry-w-bloch-scholars.html" target="_blank"><span class="material-symbols-outlined">link</span></a>
+				</div>
+				</div>
+					<p class="company-intro">Awarded full tuition and fees provided by H&R Block Foundation in partnership with MCC where I completed my associates degree. Recognized for unwavering determination to succeed and exceptional merit, despite challenging life cirsumstances.</p>	
+				</div>
+  	</section>
+		
+  </main>
+  <footer>
+    <p class="metatext">© 2023 Ceon Jones. All rights reserved.</p>
+  </footer>
+  <script src="/js/fade.js"></script>     
+</body>
+</html>
